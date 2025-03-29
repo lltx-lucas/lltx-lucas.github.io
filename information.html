@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas's Portfolio - Information</title>
+    <style>
+      /* Global Styles */
+      h1 {
+        color: green;
+      }
+
+      h2 {
+        color: green;
+      }
+
+      h3 {
+        color: brown;
+      }
+
+      h5 {
+        color: black;
+      }
+
+      p,
+      p2,
+      p3 {
+        color: black;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .portfolio-info {
+        margin-top: 20px;
+      }
+
+      .portfolio-info h2 {
+        margin-bottom: 10px;
+      }
+
+      .portfolio-info p {
+        margin-bottom: 10px;
+      }
+
+      .portfolio-info ul {
+        list-style-type: square;
+        margin-left: 20px;
+      }
+
+      .portfolio-info blockquote {
+        font-style: italic;
+        color: #555;
+        padding-left: 10px;
+        border-left: 3px solid #ccc;
+      }
+
+      /* Navigation Bar Styles */
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      /* Hover effect for links */
+      nav a:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+      }
+
+      /* Responsive Design for smaller screens */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+        padding: 20px 0;
+        background-color: #f2f2f2;
+        border-top: 1px solid #ddd;
+      }
+
+      footer a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="school.html">About My School</a>
+      <a href="links.html">Social Links</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="container">
+      <hr />
+      <h1>Information About This Portfolio</h1>
+<hr />
+      <div class="portfolio-info">
+        <h2>About This Portfolio</h2>
+        <p>
+          Welcome to my personal portfolio website! This portfolio was created to showcase my skills, hobbies, achievements, and personal interests. Through this website, I aim to introduce myself and share some of the exciting projects I’ve been working on. It’s a place where you can get to know me, my work, and my journey in a more fun and interactive way!
+        </p>
+
+        <h2>How I Built This Portfolio</h2>
+        <p>
+          This website was developed by me using HTML, CSS, and a little bit of JavaScript. I’ve always wanted to build something that reflects who I am and what I can do. It was important to me that my portfolio felt like an online extension of my personality, so I made it simple, clean, and easy to navigate.
+        </p>
+
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li><strong>HTML:</strong> Used for creating the structure of the website, so visitors can easily access the information they need.</li>
+          <li><strong>CSS:</strong> Applied to style the website and give it a fresh, modern, and colorful design that reflects my fun side!</li>
+          <li><strong>JavaScript:</strong> While not extensively used yet, I plan on incorporating interactive elements in the future, such as cool animations and dynamic content!</li>
+        </ul>
+
+        <h2>Where I Built This Portfolio</h2>
+        <p>
+          This portfolio was built using the awesome platforms <strong>GitHub</strong> and <strong>Glitch</strong>, which are great for developers like me to share and collaborate on projects.
+        </p>
+
+        <h3>GitHub</h3>
+        <p>
+          GitHub is where I store the code for this website. It allows me to keep track of all the changes I make and even collaborate with others if I want to. I also use GitHub Pages to make the website live and accessible to everyone. It's my go-to tool for version control!
+        </p>
+
+        <h3>Glitch</h3>
+        <p>
+          Glitch helped me create a live prototype of this website. It’s great for quick testing, and I love how easy it is to use. In just a few clicks, you can deploy your code and have it running online. It’s a fantastic tool for beginners and experienced developers alike.
+        </p>
+
+        <h2>Fun Facts About This Portfolio</h2>
+        <ul>
+          <li>This website is fully responsive, which means it looks great on both desktop and mobile devices!</li>
+          <li>The design was inspired by my love for simplicity and functionality. I wanted it to be easy to navigate while still reflecting my personality.</li>
+          <li>While coding this portfolio, I learned some new CSS tricks that I'm excited to share in future projects!</li>
+          <li>One of my goals for this portfolio is to update it regularly with new projects, competitions, and experiences as I grow and develop as a developer and person!</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+          Thank you for visiting my portfolio! I hope you enjoyed exploring my work and learning more about me. Feel free to get in touch if you'd like to collaborate or ask me anything. I am always open to new opportunities and challenges!
+        </p>
+      </div>
+    </div>
+        <footer>
+    <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a>
+    </footer>
+
+    <!-- Footer with Copyright Notice -->
+    <footer>
+      <p>&copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to dynamically display current year -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
