@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas's Social Links</title>
+    <style>
+      /* Navigation Menu Styles */
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+      }
+
+      /* Fun Section Styles */
+      .fun-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .quote {
+        font-style: italic;
+        color: #555;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .social-links {
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+
+      .social-links h2 {
+        color: #4CAF50;
+      }
+
+      .social-links ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .social-links li {
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .social-links a {
+        text-decoration: none;
+        color: #4CAF50;
+        font-weight: bold;
+      }
+
+      .social-links a:hover {
+        color: #45a049;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+        padding: 20px 0;
+        background-color: #f2f2f2;
+        border-top: 1px solid #ddd;
+      }
+
+      footer a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  
+  <style>
+  h1 {
+        color: green;
+      }
+  </style>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="school.html">About My School</a>
+      <a href="links.html">Social Links</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+
+    <hr />
+    <h1>My Social Links</h1>
+    <hr />
+
+    <div class="social-links">
+      <h2>Connect with Me!</h2>
+      <p>Here are my social media profiles where you can follow me for updates, memes, and more!</p>
+
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:lucasltx2012@gmail.com">lucasltx2012@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/lltx_lucas" target="_blank">@lltx_lucas</a></li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@lltx_lucas" target="_blank">@lltx_lucas</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/lltx-lucas" target="_blank">lltx-lucas</a></li>
+        <li><strong>Discord:</strong> <a href="https://discord.com/users/lucasloh" target="_blank">lucasloh</a></li>
+      </ul>
+
+      <div class="fun-section">
+        <h2>Fun Info About My Social Media</h2>
+        <p><strong>Instagram:</strong> I post a lot of memes and random photos of my life. It's a mix of fun and chill vibes! Follow me for daily laughs and awesome content.</p>
+        <p><strong>TikTok:</strong> On TikTok, I love sharing funny moments, gaming clips, and the latest viral trends. You never know what fun video I'll post next!</p>
+        <p><strong>GitHub:</strong> On GitHub, you’ll find some of my coding projects, including fun stuff like my own custom games and tools. I’m learning and building new things every day!</p>
+        <p><strong>Discord:</strong> I’m always online on Discord, chatting with friends, joining game sessions, and collaborating on coding projects. Feel free to hit me up anytime!</p>
+      </div>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div class="fun-facts">
+      <h2>Fun Facts About Me:</h2>
+      <ul>
+        <li>I'm secretly a pizza lover! 🍕 I can eat an entire pizza in one sitting!</li>
+        <li>I love making memes and posting them on Instagram and TikTok! 😂</li>
+        <li>I'm super competitive when it comes to gaming. Watch out, I play to win! 🎮</li>
+        <li>I've mastered some coding languages and can’t stop learning new ones. 💻</li>
+        <li>I’m an animal lover! I have a pet goldfish named “Sparkles” 🐟, and I also love playing with my dog.</li>
+      </ul>
+    </div>
+    <footer>
+    <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a>
+    </footer>
+    <!-- Footer with Copyright Notice -->
+    <footer>
+      <p>&copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to dynamically display the current year -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
