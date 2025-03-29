@@ -27,164 +27,203 @@
       p3 {
         color: black;
       }
+
+      /* Navigation Menu Styles */
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+      }
+
+      /* Responsive Design for smaller screens */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      /* Fun Section Styles */
+      .fun-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .fun-facts li {
+        margin: 10px 0;
+      }
+
+      .quote {
+        font-style: italic;
+        color: #555;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .game-section {
+        text-align: center;
+        background-color: #efefef;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+
+      /* Footer Styles */
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+        padding: 20px 0;
+        background-color: #f2f2f2;
+        border-top: 1px solid #ddd;
+      }
+
+      footer a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
 
   <body>
-    <hr />
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Navigation Columns</title>
-        <style>
-          nav {
-            display: flex;
-            flex-wrap: wrap;
-          }
-          nav a {
-            width: 100px;
-            padding: 10px;
-            text-decoration: none;
-            background: #f2f2f2;
-            color: black;
-            text-align: center;
-            border: 1px solid #ddd;
-          }
-        </style>
-      </head>
-
-      <body>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="information.html">Information</a>
-          <a href="school.html">About My School</a>
-          <a href="links.html">Social Links</a>
-          <a href="faq.html">FAQ</a>
-        </nav>
-      </body>
-    </html>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="school.html">About My School</a>
+      <a href="links.html">Social Links</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    
     <hr />
     <h1>Welcome to Lucas's Portfolio!</h1>
     <hr />
 
-    <h2>About Me</h2>
+    <!-- Fun Facts Section -->
+    <div class="fun-section">
+      <h2>Fun Facts About Me</h2>
+      <ul class="fun-facts">
+        <li>I'm secretly a pizza lover. 🍕 I can eat an entire pizza in one sitting!</li>
+        <li>I'm a huge fan of memes! The "Skibidi Toilet" meme is my favorite right now. 😂</li>
+        <li>I can solve a Rubik's Cube in under 2 minutes! 🧩</li>
+        <li>My dream is to someday become a professional gamer or a coding genius. 💻🎮</li>
+        <li>I have a pet goldfish named "Sparkles". 🐟</li>
+      </ul>
+    </div>
+    
+    <!-- Favorite Quotes Section -->
+    <div class="fun-section">
+      <h2>My Favorite Quotes</h2>
+      <p class="quote">"The only way to do great work is to love what you do." - Steve Jobs</p>
+      <p class="quote">"Do what you can, with what you have, where you are." - Theodore Roosevelt</p>
+      <p class="quote">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+    </div>
+    
+    <!-- Funny Story Section -->
+    <div class="fun-section">
+      <h2>A Funny Story</h2>
+      <p>Once, I tried to show off my dance skills at a school talent show. Let's just say the audience laughed so hard, I had to stop before I even finished the routine! 😅 But hey, at least I made them smile!</p>
+    </div>
+    
+    <!-- Interesting Hobbies Section -->
+    <div class="fun-section">
+      <h2>Interesting Hobbies</h2>
+      <ul>
+        <li>Playing online games (especially Roblox and Call of Duty Mobile)</li>
+        <li>Learning new programming languages (I love coding!)</li>
+        <li>Trying new sports, especially basketball and badminton</li>
+        <li>Making funny memes with my friends</li>
+      </ul>
+    </div>
+
+    <!-- Surprise Interactive Game Section -->
+    <div class="game-section">
+      <h2>Surprise Game - Try to Guess the Number!</h2>
+      <p>Can you guess the number I'm thinking of between 1 and 100?</p>
+      <input type="number" id="guessInput" placeholder="Enter your guess" />
+      <button class="button" onclick="checkGuess()">Guess</button>
+      <p id="gameMessage"></p>
+    </div>
+
     <hr />
+
+    <h2>More About Me</h2>
     <p>
-      Hello! I am Lucas. I work in McDonald's and I love eating 10,000 calories
-      worth of Big Macs, I know I'm a big back. In addition, I'm 13 years old,
-      I'm a caring, hard-working, honest, kind-hearted, mature human being. I
-      try to help my family members with the chores.
+      Hello! I am Lucas. I work at McDonald's, and I love eating 10,000 calories
+      worth of Big Macs. I know, I'm a big fan! In addition, I'm 13 years old,
+      and I enjoy gaming, reading, and spending time with my family. I am passionate
+      about learning and competing, and I have a diverse set of skills that include
+      coding, sports, and chess.
     </p>
     <hr />
 
-    <h2>Personal Background</h2>
-    <hr />
-    <p>
-      I'm an Academic Achiever and the highest amount of A's I got was 9. I love
-      reading books and studying (False), and I would like to compete in future
-      competitions in programming, and win some more money. Here are some school
-      and world competitions I have competed in.
-    </p>
-    <p>1. 2024 Spelling Bee Competition - 2nd Runner Up</p>
-    <p>2. ToastMasters Impromptu Speaking Competition - 5th Place</p>
-    <p>
-      3. 2024 School Teenage Cadets Marching Competition (State) - 3rd Place
-    </p>
-    <p>
-      4. 2023 School Teenage Cadets Marching Competition (State) - 3rd Place
-    </p>
-    <p>
-      5. 2022 School Teenage Cadets Marching Competition (State) - 2nd Place
-    </p>
-    <hr />
+    <script>
+      function checkGuess() {
+        const number = Math.floor(Math.random() * 100) + 1;
+        const userGuess = document.getElementById("guessInput").value;
+        const message = document.getElementById("gameMessage");
 
-    <h2>My Favorite Thing to Do When I'm Bored</h2>
-    <p>
-      I love gaming, especially on Roblox or Call Of Duty Mobile (CODM).
-      Sometimes, I like to run, play badminton, football, or basketball. As you
-      can see, I am sporty.
-    </p>
-    <hr />
+        if (userGuess == number) {
+          message.innerHTML = `Congrats! You guessed the right number! 🎉 The number was ${number}.`;
+        } else {
+          message.innerHTML = `Oops! Try again. The number was ${number}.`;
+        }
+      
+    </script>
+    <footer>
+    <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a>
+    </footer>
+    <!-- Footer with Copyright Notice -->
+    <footer>
+      <p>&copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.</p>
+    </footer>
 
-    <h2>Background In Sports</h2>
-    <hr />
-    <p>
-      I love sports, especially cycling, running, playing badminton, football,
-      or basketball. I have been in the school running team for almost 1 year
-      now, and my Highest Personal Record was 10.14 seconds in the 100-meter
-      dash. I'm proud of my result. Next, I shall state the medals I have
-      received in the school's Sports Day.
-    </p>
-    <p>1. 2023 4X100M Dash - 1st Place</p>
-    <p>2. 2024 4X100M Dash - 2nd Place</p>
-    <p>3. 2023 100M Dash - 3rd Place</p>
-    <p>4. 2024 100M Dash - 3rd Place</p>
-    <p>5. 2019 Fun Games - 1st Place</p>
-    <hr />
-
-    <h2>Favorite Memes</h2>
-    <p>1. Skibidi Toilet</p>
-    <p>2. Costco Guys</p>
-    <p>3. Rizzler Sigma Ohio Gyat</p>
-    <hr />
-
-    <h2>Background and Experiences in Chess</h2>
-    <hr />
-    <p>
-      Firstly, I am a Class A, International Level Chess Player, with 1800 ELO.
-      I am very professional in chess, and I can tell which are the best moves.
-      I have competed in various types of tournaments and competitions before,
-      and also won 90% of them. These are my awards I have received in chess.
-    </p>
-    <p>1. Malaysia Chess Championship</p>
-    <p>2. MCF Blitz</p>
-    <p>3. U2400</p>
-    <p>4. Kulim Central Age Group Chess Championship 2025 (U12)</p>
-    <p>
-      5. [KCE18] 3rd Ultimate Chess Master 2025 Classical (Fide Rated U1800)
-    </p>
-    <p>6. SJKT Ladang Emerald Mini Chess Tournament 2025</p>
-    <p>7. WP KUALA LUMPUR Open 2025 (FIDE-Rated) - Circuit 3</p>
-    <p>8. MSSPP Preliminary Match 2025</p>
-    <p>9. KL Gateway Mall Open Chess Tournament - U12</p>
-    <p>10. Kulim Central Age Group Chess Championship 2025 (OPEN)</p>
-    <hr />
-
-    <h2>Experiences and Competitions Regarding Coding or Programming</h2>
-    <hr />
-    <p>1. GeeksForGeeks</p>
-    <p>2. The ACM-ICPC International Collegiate Programming Competitions</p>
-    <p>3. Google Kick Start</p>
-    <p>4. Google Code Jam</p>
-    <p>5. Google Hash Code</p>
-    <p>6. The ICFP Programming Competitions</p>
-    <p>7. Facebook Hacker Cup</p>
-    <p>8. Microsoft Imagine Cup</p>
-    <hr />
-
-    <h2>My Friends</h2>
-    <p>I don't have any friends.</p>
-    <hr />
-
-    <h2>Schools I Have Been In</h2>
-    <p>1. SJK(C) Han Chiang, Malaysia</p>
-    <p>2. Han Chiang High School, Malaysia</p>
-    <p>3. University of Harvard, United States of America</p>
-    <hr />
-
-    <h2>My Line of Courage</h2>
-    <p>
-      Keep working harder and get better if you get failure. If you succeed,
-      keep working harder and learn new things. Today will be the day you
-      succeed, tomorrow will be your future. Never give up on your dreams.
-    </p>
-    <hr />
-
-    <h3>That's all for my portfolio. I hope you enjoyed reading this!</h3>
-    <hr />
-    <h5>- This Website/Portfolio was Made and Programmed by Lucas</h5>
-    <hr />
+    <!-- JavaScript to dynamically display the current year -->
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
