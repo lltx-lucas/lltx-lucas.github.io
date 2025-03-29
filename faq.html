@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas's Portfolio - Homepage</title>
+  <style>
+    /* Global Styles */
+    h1 {
+      color: green;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    h3 {
+      color: brown;
+    }
+
+    h5 {
+      color: black;
+    }
+
+    p,
+    p2,
+    p3 {
+      color: black;
+    }
+
+    /* Navigation Menu Styles */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* FAQ Section Styles */
+    .faq-container {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .faq-header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .faq-item {
+      background-color: #f2f2f2;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Accordion Effect */
+    .active .faq-answer {
+      display: block;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+      padding: 20px 0;
+      background-color: #f2f2f2;
+      border-top: 1px solid #ddd;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <hr />
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="school.html">About My School</a>
+    <a href="links.html">Social Links</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <hr />
+
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-container">
+    <div class="faq-header">
+      <h2>Here are some common questions and answers</h2>
+    </div>
+
+    <!-- Previous FAQs -->
+    <div class="faq-item">
+      <h3>What is Lucas's favorite hobby?</h3>
+      <div class="faq-answer">
+        <p>Lucas enjoys gaming, especially on platforms like Roblox and Call of Duty Mobile (CODM). He is also passionate about sports like badminton, football, and cycling.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>How many medals has Lucas won in school competitions?</h3>
+      <div class="faq-answer">
+        <p>Lucas has won several medals, including a 1st place in the 2023 4X100M Dash and 2nd place in the 2024 4X100M Dash, along with other achievements in various school competitions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does Lucas have any experience in chess?</h3>
+      <div class="faq-answer">
+        <p>Yes, Lucas is a Class A International Chess Player with 1800 ELO. He has competed and won several prestigious chess competitions, including the Malaysia Chess Championship and the MCF Blitz tournament.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>What programming competitions has Lucas participated in?</h3>
+      <div class="faq-answer">
+        <p>Lucas has participated in several renowned programming competitions, such as Google Kick Start, Google Code Jam, and the ACM-ICPC International Collegiate Programming Competitions.</p>
+      </div>
+    </div>
+
+    <!-- New FAQs -->
+    <div class="faq-item">
+      <h3>What are Lucas's future goals?</h3>
+      <div class="faq-answer">
+        <p>Lucas aims to continue excelling in programming, chess, and sports. He hopes to pursue a career in software development and also aims to continue competing in various academic and extracurricular competitions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is Lucas's dream job?</h3>
+      <div class="faq-answer">
+        <p>Lucas dreams of becoming a professional software developer, possibly working for a tech company like Google, Microsoft, or Apple. He is also interested in contributing to open-source projects.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is Lucas's academic performance like?</h3>
+      <div class="faq-answer">
+        <p>Lucas is an academic achiever and has been recognized for his hard work. He has achieved the highest number of A's in his class, and continues to strive for excellence in his studies.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Has Lucas received any scholarships?</h3>
+      <div class="faq-answer">
+        <p>Lucas has been awarded a scholarship for his academic achievements, and he plans to apply for more scholarships to support his further education, particularly in software engineering.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is Lucas's favorite programming language?</h3>
+      <div class="faq-answer">
+        <p>Lucas enjoys working with Python and C++, as they are versatile and widely used in both competitive programming and software development. He is also learning JavaScript for web development.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is Lucas's approach to learning new skills?</h3>
+      <div class="faq-answer">
+        <p>Lucas takes a hands-on approach to learning. He prefers experimenting with real-world projects, solving problems, and reading books. He believes in continuous improvement and learning from both successes and failures.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does Lucas have any hobbies outside of gaming and sports?</h3>
+      <div class="faq-answer">
+        <p>Yes, Lucas enjoys reading, especially books on programming, technology, and chess strategies. He also likes watching educational videos to stay up-to-date with the latest trends in tech.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <hr />
+  <h5>- This Website/Portfolio was Made and Programmed by Lucas</h5>
+  <hr />
+      <footer>
+    <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a>
+    </footer>
+
+  <!-- Footer with Copyright Notice -->
+  <footer>
+    <p>&copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript for accordion effect
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+
+    // JavaScript to dynamically display the current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
