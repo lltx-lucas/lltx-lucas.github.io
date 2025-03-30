@@ -43,7 +43,7 @@
         color: white;
         font-weight: bold;
         padding: 12px 20px;
-        background-color: #4CAF50;
+        background-color: #4caf50;
         border-radius: 5px;
         transition: background-color 0.3s ease, transform 0.3s ease;
       }
@@ -94,7 +94,7 @@
 
       .button {
         padding: 10px 20px;
-        background-color: #4CAF50;
+        background-color: #4caf50;
         border: none;
         color: white;
         font-size: 16px;
@@ -118,7 +118,7 @@
       }
 
       footer a {
-        color: #4CAF50;
+        color: #4caf50;
         text-decoration: none;
       }
 
@@ -137,7 +137,7 @@
       <a href="links.html">Social Links</a>
       <a href="faq.html">FAQ</a>
     </nav>
-    
+
     <hr />
     <h1>Welcome to Lucas's Portfolio!</h1>
     <hr />
@@ -146,33 +146,56 @@
     <div class="fun-section">
       <h2>Fun Facts About Me</h2>
       <ul class="fun-facts">
-        <li>I'm secretly a pizza lover. 🍕 I can eat an entire pizza in one sitting!</li>
-        <li>I'm a huge fan of memes! The "Skibidi Toilet" meme is my favorite right now. 😂</li>
+        <li>
+          I'm secretly a pizza lover. 🍕 I can eat an entire pizza in one
+          sitting!
+        </li>
+        <li>
+          I'm a huge fan of memes! The "Skibidi Toilet" meme is my favorite
+          right now. 😂
+        </li>
         <li>I can solve a Rubik's Cube in under 2 minutes! 🧩</li>
-        <li>My dream is to someday become a professional gamer or a coding genius. 💻🎮</li>
+        <li>
+          My dream is to someday become a professional gamer or a coding genius.
+          💻🎮
+        </li>
         <li>I have a pet goldfish named "Sparkles". 🐟</li>
       </ul>
     </div>
-    
+
     <!-- Favorite Quotes Section -->
     <div class="fun-section">
       <h2>My Favorite Quotes</h2>
-      <p class="quote">"The only way to do great work is to love what you do." - Steve Jobs</p>
-      <p class="quote">"Do what you can, with what you have, where you are." - Theodore Roosevelt</p>
-      <p class="quote">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+      <p class="quote">
+        "The only way to do great work is to love what you do." - Steve Jobs
+      </p>
+      <p class="quote">
+        "Do what you can, with what you have, where you are." - Theodore
+        Roosevelt
+      </p>
+      <p class="quote">
+        "Success is not final, failure is not fatal: It is the courage to
+        continue that counts." - Winston Churchill
+      </p>
     </div>
-    
+
     <!-- Funny Story Section -->
     <div class="fun-section">
       <h2>A Funny Story</h2>
-      <p>Once, I tried to show off my dance skills at a school talent show. Let's just say the audience laughed so hard, I had to stop before I even finished the routine! 😅 But hey, at least I made them smile!</p>
+      <p>
+        Once, I tried to show off my dance skills at a school talent show. Let's
+        just say the audience laughed so hard, I had to stop before I even
+        finished the routine! 😅 But hey, at least I made them smile!
+      </p>
     </div>
-    
+
     <!-- Interesting Hobbies Section -->
     <div class="fun-section">
       <h2>Interesting Hobbies</h2>
       <ul>
-        <li>Playing online games (especially Roblox and Call of Duty Mobile)</li>
+        <li>
+          Playing online games (especially Roblox and Call of Duty Mobile)
+        </li>
         <li>Learning new programming languages (I love coding!)</li>
         <li>Trying new sports, especially basketball and badminton</li>
         <li>Making funny memes with my friends</li>
@@ -194,15 +217,15 @@
     <p>
       Hello! I am Lucas. I work at McDonald's, and I love eating 10,000 calories
       worth of Big Macs. I know, I'm a big fan! In addition, I'm 13 years old,
-      and I enjoy gaming, reading, and spending time with my family. I am passionate
-      about learning and competing, and I have a diverse set of skills that include
-      coding, sports, and chess.
+      and I enjoy gaming, reading, and spending time with my family. I am
+      passionate about learning and competing, and I have a diverse set of
+      skills that include coding, sports, and chess.
     </p>
     <hr />
 
     <script>
       function checkGuess() {
-        const number = Math.floor(Math.random() * 100) + 1;
+        const number = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
         const userGuess = document.getElementById("guessInput").value;
         const message = document.getElementById("gameMessage");
 
@@ -211,19 +234,25 @@
         } else {
           message.innerHTML = `Oops! Try again. The number was ${number}.`;
         }
-      
+      }
     </script>
+
     <footer>
-    <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a>
+      <a href="https://penangmaker.com/" target="_blank"
+        >This is a student assignment from Han Chiang High School Makers
+        Club.</a
+      >
     </footer>
     <!-- Footer with Copyright Notice -->
     <footer>
-      <p>&copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.</p>
+      <p>
+        &copy; <span id="year"></span> Lucas's Portfolio. All rights reserved.
+      </p>
     </footer>
 
     <!-- JavaScript to dynamically display the current year -->
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
